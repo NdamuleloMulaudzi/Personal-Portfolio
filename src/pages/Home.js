@@ -1,9 +1,18 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import '../styles/Home.css'
-import Resume from '../assets/NdamuleloMulaudziResume.pdf'
+import resume from './Ndamulelo.pdf'
 import { LinkedIn, Email, GitHub } from '@material-ui/icons'
 import { motion } from 'framer-motion'
+
+const viewResume = () => {
+    return (
+        <div>
+            <iframe src='../assets/Ndamulelo.pdf' title='Resume' ></iframe>
+        </div>
+    )
+}
+
 
 const skillsVariant = {
     initial: {
@@ -30,6 +39,7 @@ const buttonVariant = {
     }
 }
 
+
 function Home() {
     return (
         <div className="home">
@@ -46,9 +56,10 @@ function Home() {
                     <Link to="mailto:ndamulel.mulaudzi@gmail.com" target="_blank"><Email /></Link>
                     <Link to="https://github.com/NdamuleloMulaudzi" target="_blank"><GitHub /></Link>
                     <div className='resume'>
-                        <a href="Resume" download={Resume}><motion.button
+                        <a href={resume}><motion.button onClick={viewResume}
                             variants={buttonVariant}
-                            whileHover="hover">Resume</motion.button></a>
+                            whileHover="hover" >Resume</motion.button></a>
+
                     </div>
                 </div>
             </div>
