@@ -13,16 +13,16 @@ export const ProjectList = [
         gitHubLink: "https://github.com/NdamuleloMulaudzi/expenses"
     },
     {
-        name: "Slamu Tech Shop",
+        name: "Slamu Store",
         image: MyTechShop,
         skills: "ReactJs, JavaScript, React-Router, Phosphor-React",
         gitHubLink: "https://github.com/NdamuleloMulaudzi/My-store",
-        webLink: "https://slamustore.netlify.app/"
+        webLink: "https://ndamustore.netlify.app/"
     },
     {
         name: "My Portfolio",
         image: Portfolio,
-        skills: "ReactJs, JavaScript, React-Router, MaterialUI",
+        skills: "ReactJs, JavaScript, React-Router, MaterialUI, Framer Motion",
         gitHubLink: "",
         webLink: ""
     },

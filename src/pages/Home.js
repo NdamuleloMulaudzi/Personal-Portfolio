@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import '../styles/Home.css'
-import { Resume } from '../assets/Ndamulelo Resume.pdf'
+import Resume from '../assets/NdamuleloMulaudziResume.pdf'
 import { LinkedIn, Email, GitHub } from '@material-ui/icons'
 import { motion } from 'framer-motion'
 
@@ -40,15 +40,15 @@ function Home() {
                     animate={{ opacity: 1, backgroundColor: "#21325e" }}
                     transition={{ delay: 1.5 }}>
                     <p>Welcome to my digital canvas, I'm a passionate <span className='jobDes'>Frontend Developer</span> weaving creativity and functionality into seamless web designs. Step into a world where code meets creativity, and let's embark on a journey through innovative interfaces and captivating user experiences</p>
-                    <Link to="https://www.linkedin.com/in/ndamulelo-mulaudzi-745a58250"
+                    <Link to="https://www.linkedin.com/in/ndamumulaudzi"
                         target="_blank"
                     ><LinkedIn /></Link>
                     <Link to="mailto:ndamulel.mulaudzi@gmail.com" target="_blank"><Email /></Link>
                     <Link to="https://github.com/NdamuleloMulaudzi" target="_blank"><GitHub /></Link>
                     <div className='resume'>
-                        <Link><motion.button
+                        <a href="Resume" download={Resume}><motion.button
                             variants={buttonVariant}
-                            whileHover="hover">Resume</motion.button></Link>
+                            whileHover="hover">Resume</motion.button></a>
                     </div>
                 </div>
             </div>
